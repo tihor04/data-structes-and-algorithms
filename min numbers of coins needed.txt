@@ -1,0 +1,11 @@
+min number of coins required to make a value
+
+steps
+
+1) make a dp array of size val+1 and intialise all values except first(which will be zero) as infinity
+
+2) loop thorugh every value of the dp array and run another array for every coin denomination
+
+3)if a coin is smaller or equal to the sum then find min of its present value and the and if we had value -present coin  as the question
+
+4) return the last value

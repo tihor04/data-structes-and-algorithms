@@ -1,0 +1,17 @@
+max number ways to make a value from give coins
+
+steps-
+
+1) make a 2D array of value+1 and n+1 diamentions
+
+2)intinalise as follows: ->>> we get the answer 1 if the value to be made is zero
+                         ->>> we get the answer 0 if we have zero coins
+
+3) run a loop for the rest of the items and this will have the following condition: ->>> if the present coin is greater than the sum then
+                                                                                         the answer of will be that we got of the previous 
+                                                                                         coin
+                                                                                     ->>> if the value of coin is smaller than the value
+                                                                                           then we add the answer of the value-coin_value
+                                                                                           position to our present value
+4) we retuen dp[value][n];
+                                                                                          
