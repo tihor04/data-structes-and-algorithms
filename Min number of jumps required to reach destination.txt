@@ -1,0 +1,14 @@
+Min number of jumps required to reach destination:
+
+problem: We are given an array and we start from the first index then find the min number of steps to reach the end if we can only jump
+arr[i] jumps from the present index.
+
+Recursive approach:
+we run a loop form 0 to n-1, and if we find an index form which we can reach the end of the matrix then we recursivly call for the case in
+which we need to move till this index and we compare the results that we got and the present result.
+
+
+Dynamic approach:
+we make a dp array of size n, first index is zero and the rest are infinity, we traverse through the array and for each i we go throgh all 
+its previous indices and check if we can reach the ith index from here and if the dp[j] is not infinity (which means that it is possible to
+reach the jth index) and then we choose the min b/w dp[i],dp[j]+1.

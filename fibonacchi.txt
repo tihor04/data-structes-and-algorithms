@@ -1,0 +1,14 @@
+
+fibbonacchi using DP
+
+tabulation approach->
+  1) make an n+1 arr and intialise the 0th and the 1st index to 0 and 1 resp.
+  2) now run a loop from 2nd index and fill the array as arr[i]=arr[i-1]+arr[i-2]
+  3) return arr[n]
+
+
+
+memoisation approach->
+1) create an array of size n+1 with all values as -1
+2) now do a recuresive traversal but also have a if codition that when only the arr[n]==-1 then we recuresivly 
+   call for n-1 and n-2 and if arr[n] already exist then we simply return arr[n]

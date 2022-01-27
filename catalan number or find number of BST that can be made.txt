@@ -1,0 +1,11 @@
+catalan number or find number of BST that can be made 
+
+steps:
+
+1)make an array with size n+1
+
+2)initialise the array of 0 and 1 with 1
+
+3) run a loop form 2 to n and for every item do the opration dp[i]*d[j-i-1] on every item behind this perticular index
+
+4) return dp[n]

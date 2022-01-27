@@ -1,0 +1,6 @@
+Find nCr:
+problem-> given n and r, find nCr%10^9+7
+
+solution:
+use the following logic to make a 2d dp array
+c(n,r)=(c(n-1,r-1)%mod+c(n-1,r)%mod)%mod

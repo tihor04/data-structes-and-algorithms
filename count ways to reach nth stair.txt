@@ -1,0 +1,17 @@
+1) count ways to reach nth stair:(we can only climb 1 or 2 stair at a time, order matters)
+
+steps:
+
+->basically its answer is the fibonacchi sequence as in the recursive solution we will call the fucntion once for 
+ n-2(taking two stairs at a time)  and n-1 (taking one stair at a time) which in turn will provide us with our fibanacchi serise.
+
+=======================
+
+2) count the ways to reach nth stair (when order dosnt matters and we can only move 1 or 2 steps at a time)
+
+steps:
+
+->this can be solved using the solutiion of the coin select problem the only difference is that we only have coins of denomination 1 and 2
+
+
+

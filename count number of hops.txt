@@ -1,0 +1,8 @@
+count number of hops: there is a frog which can only jump 1 or 2 or 3 steps, find the number of ways can the frog reach the nth step
+
+steps:
+
+the recursive solution to this problem will tell us that we need to recursivly call of the function three time, one for when we take 3
+steps, for 2 steps and for 1 step. 
+
+therefore the dp solution we have to add the last three values to get the value of the present value
