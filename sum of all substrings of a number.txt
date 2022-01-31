@@ -1,0 +1,17 @@
+Sum of all substring of a number: 
+
+problem-> find the sum of all possible substrings of a string:
+
+approch 1(n^2)
+
+we make a 2d dp matrix that is (sizeofstring)X(sizeofstring)do which will signify start of index and end index of the sub string
+here we make the lower matrix triangle as our intrseted part, the sum of all these elements is our answer.
+
+approach 2
+
+for every index we make substrings that end with the present char and we add them all.
+
+approach 3:
+
+dp[i]=(i+1)*num[i]+10*dp[i-1]
+the sum of every element of the dp array will be the answer

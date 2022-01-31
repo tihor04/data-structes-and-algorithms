@@ -1,0 +1,8 @@
+Unique BST:
+problem-> given a number n we need to find the total number of bst's that we can make form numbers 1 to n
+
+solution -> we make a dp array of size n+1 and intialise the 0th and 1st index with 1 
+            we loop from 2 to n and for every index the value of dp[i] will be sum of dp[j]*dp[j-i-1] where (0<j<i)
+            then we return dp[n]
+
+(this solution is the solution for nth catlan number)

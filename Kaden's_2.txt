@@ -1,0 +1,11 @@
+Kande's 2
+problem->
+we are given an array and we need to find the max sum of non adjecent elements
+
+solution->
+case 1: when all the elements of the array are negative-> fir this we run a loop and find the max element and then return it.
+case 2:when there are both positive and negative elements in the array-> we make a dp array in which the dp[0] will be max
+                                                                          max of 0 and arr[0] and dp[1] will be max of 
+                                                                         dp[0] and arr[1]. and we run a loop and use the logic
+                                                                         dp[i]=max(dp[i-1],arr[i]+dp[i-2]); 
+                                                                           return dp[n-1];
