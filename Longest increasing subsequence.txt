@@ -1,0 +1,7 @@
+Longest increasing subsequence
+problem-> given an array find the longest increacing subsequence 
+
+solution
+we make a dp array of size n in whihc we store the max lenth of a subsequence that will end at that index, to do this
+we travere through the array and and for every index i we traverse to all the elements behind it and if an element is smaller than 
+the present element then if the current value of dp[i] is grater or the dp[j]+1 is greater.

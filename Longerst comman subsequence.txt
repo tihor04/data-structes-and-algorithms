@@ -1,0 +1,15 @@
+Longerst comman subsequence:
+ 
+problem->
+
+given two strings we need to find the longest subsequece with the comman characters
+
+solution ->
+
+ the recuresive approach of this question will be the following:
+
+ we start form the end of the two strings and if the find the same character at the index then we return 1+recusive_call_for(i-1,j-1) else we return the max 0f(when we move -1 in s1,that in
+s2)
+
+
+using the above recursive idea we form a 2d array to get the optimised solution.

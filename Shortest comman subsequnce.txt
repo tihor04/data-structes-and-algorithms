@@ -1,0 +1,11 @@
+Shortest comman subsequnce :
+
+problem :
+
+given two strings we need to find the length of the sortest string that have both the strings as a sub sequence
+
+solution:
+
+this problem is just a permutation of the longest comman subsequence,
+here we find the longest comman subsequecne and then retuen the value of (size of s1+size of s2-longestcommansubseq)
+
