@@ -1,0 +1,15 @@
+Maxnimum cut segment:
+
+problem->
+
+we are given a rope of length n and we are given three numbers x,y,z. we can only make cuts of length x,y,z. we need to find the max sections that can be made.
+
+solution-> 
+
+we make a dp array of size n+1, and we initialize the 0th index with 0 and rest other with INT_MIN
+
+then we traverse through the array and for every index we check if the lenght i is grater than x,y,z(do seprate checks for all three)
+
+and if the value of dp[i-(x,y,z)] is not INT_MIN we find the maximum value of(dp[i], dp[i-(x,y,z)];
+
+ 

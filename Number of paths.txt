@@ -1,0 +1,17 @@
+Number of paths:
+
+problem->
+we are given a aXb matrix and we are at the 0,0 index, we need to find the number of paths to reach a-1,b-1 index;
+
+solution: 
+
+the recursive approach to this question will be the following:
+
+base cases:
+1) if we reach the index 0,0 we return 1
+2) if move to an index where i<0 or j<0 we return 0
+
+or else we retrun the sum of the two calls -> (i-1,j) +(i,j-1)
+
+to make a more optimised solution of the problem we make a 2d dp matrix of size a,b;
+and fill it according to the recuresive calls.
