@@ -1,0 +1,12 @@
+sticker thief
+
+problem:
+
+we are given an array of number and there is a thief who only steals for non consicutive houses, we need to find the best 
+stratergy for him to steal.
+
+solution:
+
+we maka an array of size n, in which we intialise the first index as arr[0] and the second index with max(arr[0],arr[1])
+and then we run a loop for 2 to n and update each index of the dp array to maximum of dp[i-1] or dp[i-2]+arr[i]
+we retrun dp[n-1]
