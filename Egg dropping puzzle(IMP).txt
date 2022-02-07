@@ -1,0 +1,39 @@
+Egg dropping puzzle:
+
+problem->
+
+we are give e eggs and a building of f floors, we need to find out the minimumm number of mooves that we require the
+limit of an egg.
+
+
+Recursive solution->
+
+for every index from 1 to f we find max(break,did_not_break)+1;
+
+psudo code:
+
+min(max(res(e-1,f-1),res(e,f-x)+1))
+
+
+Dynamic programming solution->
+
+we make a 2d dp array of size(f+1,e+1)
+
+
+the 0th colume will be dummy column 
+we intialise ->
+0th row as 0
+1st row as 1
+1st column as i
+
+for every index in the 2d array (from 2) 
+->intialise the dp[i][j] as int max;
+->we run a loop for(x=1;x<=i;X++);
+->dp[i][j] will be min of two values->1)dp[i][j]
+                                      2)max(dp[x-1][j-1](we find the answer before x),dp[i-x][j]+1(we did not find the answer))
+
+->return dp[f][e];
+
+
+
+
