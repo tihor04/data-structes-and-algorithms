@@ -1,0 +1,25 @@
+0-1 Knapsack
+
+problem -> we are given two arrays one the wt and the val and are given a number w, we need to find the max value which we
+can get by having exactly w weight.
+
+solution:
+
+Recuresive->
+if the current wt is larger than the leftover then we ignore or we retun the max of two cases
+ 1) we use this 
+ 2) we do not use this
+
+Dp->
+we make a  2d matrix of size n+1 and W+1 now if the j th index is greater than the wt[i-1] the we choose between choosing 
+the i th index and not choosing it ->(dp[i][j]=max(val[i-1]+dp[i-1][j-wt[i-1]],dp[i-1][j])
+else it will be same as the last index->dp[i][j]=dp[i-1][j]
+
+return dp[n][w]
+
+
+
+
+
+
+ 
