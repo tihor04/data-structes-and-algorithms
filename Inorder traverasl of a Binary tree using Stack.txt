@@ -1,0 +1,32 @@
+Inorder traverasl of a Binary tree using Stack:
+
+we have the root of the function and we need to prin the binary tree in inorder manner(i.e. for every subtree there should be the left most node first then the root and then the right node)
+
+Step -
+
+1) Initialise an empty stack 
+
+2) while(current node is not null or stack is not empty) do the following
+   ->while(current node is not null)-> {keep moving to the left of the binart tree and add the items to the stack}
+   -> pop the top most item in the stack and print it out and push the right child to the stack
+   -> move the current pointer to the right child of the present current pointer.
+
+psudo code ->
+
+Stack<Node> st;
+
+Node* curr=root;
+
+while(curr!=null || st.isEmpty()!=0){
+ 
+while(curr!=null){
+	st.push(curr);
+	curr=curr->left;
+}
+
+curr=st.top()
+print(currr.value)
+st.pop()
+curr=cuur->right;
+
+}

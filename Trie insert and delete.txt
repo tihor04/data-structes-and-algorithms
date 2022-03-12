@@ -1,0 +1,10 @@
+Trie insert and delete->
+
+solution->
+
+Insert->
+	we make a new trienode and initialise it with root node then we move through the string to be inserted and check if 
+	the index at key[i]-'a' is empty or not if it is empty we make a new trienode for it.
+search->
+	we make a new curr trienode, then we start traversing though the given string and if we find an index (key[i]-'a')
+	which is null we return false. at the end we return curr->isEnd.
