@@ -1,0 +1,15 @@
+Stock Buy and selling problem:
+
+problem: we are given an array of prices of stock and we need to choose two days, one when we will buy a stock and the other
+when we will sell a stock.
+
+solution:
+
+if the problem asked us to find the overall profit throughout the period then we would use kadane's algorithm
+but here we will :
+
+ 			->have two variables first maxpro=0 and ind=0;
+			->we run a loop form 1 to n and check of the curr element is bigger than our element at ind we store the
+			 max of the differece in the present two indices and the maxpro;
+			->and if the curr element is smaller than the ind element we move the ind pointer to i
+			 then we return maxpro

@@ -1,0 +1,16 @@
+Merge two arrays of size m and n in O(m+n):
+
+problem:
+
+given two arrays one of size m+n (with m numbers and n zeros) and other of size n ;
+
+solution-> 
+make 3 pointers 1-end of array 1 , 2-end of array two , 3- end of the m+n array
+
+while pointer 1 and 2 are greater than zero 
+we check for the greater element of the two arrays and replace it with the third pointer.
+
+at last we double check if there is any element left in the second array by running another while loop
+
+time complexity - O(n)
+space O(1)
