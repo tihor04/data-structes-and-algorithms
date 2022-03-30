@@ -1,0 +1,19 @@
+insert delete and get random in O(1) :
+
+provide the above three functionality in O(1);
+
+sol:
+
+to sovle the problem we will use a vector and an unordered map;
+
+the map will store the elements  and their index's;
+
+the main chalenge will be how to delete an element for a vector in O(1):(this is only valid for the case when the order dosen't matter-
+-if the last element is the element to be removed the simply popback
+-else as we already know the index of the element to be deleted (from the map) so we swap the to be deleted element from the last element and then popback
+
+getrandom funtion is implemented as follows:
+
+int getrandom(){
+ return v[rand()%v.size()];
+}

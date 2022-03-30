@@ -1,0 +1,11 @@
+Make a 2D array of the pascals triangle;
+
+
+given the number of rows find the 2d array of the corresponding pascals triangle;
+
+ex: n=3;
+[[1],[1,1],[1,2,1]]
+
+
+the first and last element of every array will be 1 and the middle element will be the sum of the jth and j-1th element 
+of the previous matrix;

@@ -1,0 +1,15 @@
+3sum problem: 
+
+given an array find the three numbers such that the sum of all the three numbers is 0,(the set of numbers in the answer should not repeat themselves)
+
+solution:
+ -first of all we need to sort the array so that we can apply the two pointer approach later on 
+ -then we run a for loop form 0 to the size of the array to fix the first number of the triplet 
+ -as the first number is already fixd then we run a while loop for the two pointer approach that we need to apply. note that the number we need to find now will be negative of the fixed  
+ number.
+ -when the desired number is found-1)push the number to the answer vector.
+					     2)to remove dumplicates while(st<end&&arr[st]==arr[st+1])st++;(this will skip all the repeating elements for the variable st)
+					     3)do the same with end i.e. while(st<end && arr[end]==arr[end-1])end--;
+					     4)now do the same for the varialbe that we originally fixed i.e i -while(i+1<n && arr[i]==arr[i+1])i++;
+
+then return the ans vector;

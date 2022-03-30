@@ -1,0 +1,20 @@
+find the number of subarrays with a given sum;
+
+problem: given an array and a number k , find the  number of subarrys with the sum k;
+
+sol:
+
+NOTE: do not use recursion to solve this problem as we will have repeating test cases, recursion will be important in the case when we need to find subsequences.
+
+-make a sum variable and a hashtabe.
+
+-traverse through the array. 
+
+-now keep adding the numbers in the array and check the following conditions:-if the sum becomes equals to k then increase the count.
+												     -if the sum already exist in the map then increase the count 
+
+-push the present sum to the map
+
+-return the count;
+
+
