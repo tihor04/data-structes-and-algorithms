@@ -1,0 +1,11 @@
+rotate an image problem : 
+
+problem:  give a nxn matrix, we need to rotate the matrix by 90 degrees 
+
+solution : 
+
+ a very intutive solution is,
+
+first take the transpose of the matrix
+
+and then swap the reverse the elemetns at every row.
