@@ -1,0 +1,15 @@
+lexicographcally next permutation (NON_THINKABLE)
+
+problem: given an array find the lexicographically next permutation of the array:
+
+solution : 
+
+this is more of a trick than a solution.
+
+1)find the largest index k such that nums[k]<nums[k+1] (if there is no such index then simply reverse the array and return)
+2) find the largest element l>k such that nums[k]<nums[l]
+3) swap the numberers at k and l
+4) reverse the subarray from k+1 to n;
+
+
+
