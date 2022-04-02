@@ -1,0 +1,32 @@
+Game of life: 
+
+problem :
+
+give a mxn matrix which cosist of only zero's and 1 we need to find a new matrix which uses the following rules.
+
+(ps:concide all 9 neighbours of an element) 
+
+1)an alive cell dies when the amount of alive neighbours are either greater than 3 or less than 2 
+2)an alive cell remains alive when amout of alive neighbours are exactly 2 or 3 
+3)a dead cell becomes alive when it has exactly 3 alive neighbours.
+
+solution :
+
+make a boolean function to make sure that the index are valid
+
+make a count varible and set it to 0 
+
+traverse through the matrix and check all 8 neighbours for value 1 ( assinging value -1 to the 1 that is dead and 2 to the 0 that becomes alive) and if both are true , then increase count
+so also check for -1 while we checking for 1 
+
+traverse throuh the matrix again and replace -1 with 0 , and 2 with 1
+
+
+
+
+
+
+
+                                                        
+
+
