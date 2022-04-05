@@ -1,0 +1,14 @@
+number of pairs with sum divisible by 60;
+
+problem: 
+
+given an array we need to find two indexes such that, the sum of numbers at i and j is divisbile by 60;
+
+solution: 
+
+PS: this solution is applicable to not only 60 but also any other numbers ;
+
+-> we make an array of remainders of size 60
+->run a loop through the array and store the remiander of the currelement to the array(add the element to the rem array at last to remove extra cases when curr =30)
+->if the rem is zero then add rem[0] to the ans 
+->if the rem is non zero  the add rem[60-curr] to the result;

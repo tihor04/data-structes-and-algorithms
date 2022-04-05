@@ -1,0 +1,9 @@
+4sum problem: 
+
+given an array find 4 numbers i,j,k,l st sum is qual to targer .
+
+solution 
+
+use two for loops to fix the ith and jth numbers and then use two pointer approach to find the next two elements
+
+to not allow duplicates in the solution, write a while loop function for i j and start and end pointer.
