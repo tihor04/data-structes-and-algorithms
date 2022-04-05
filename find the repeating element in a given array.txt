@@ -1,0 +1,32 @@
+find the repeating element in a given array;
+
+problem : 
+ we are given an array of size n+1 and it contains elements of [1,n] inclusive, the array has only one element that repeats.
+ we need to find the repeating element and we are not allowed to change the array or to use any extra space
+
+
+solution :
+
+1) if we are alloed to change the array we can easily sort the array and find the only repeating element
+
+2) if we are allowed to use extra space then we will use an unordered set to the values already found in the array.
+
+3) now , we are not allowed to use any of them , therefore we will use binary search 
+
+   
+  	->low=1,high=size-1
+	->while low<=high
+	->find mid ;
+	->count the number of elements that are smaller than or equal to mid 
+	->if the count is less than or eqaul to mid we move the lower pointer 
+	->else we move the high pointer 
+	->return low
+
+
+Explaination of the appoach : 
+
+suppose that the element k repeats itself so the arrya will look like [1,2,......k-1,k,k,k+1.....n]
+and if the element is between 1 and mid then count of elements lower than mid will be greater than mid so we move towards the right of the array 
+similar is the case for elememt being at the right of array.
+
+

@@ -1,0 +1,18 @@
+comintaiton to form target:
+
+problem -
+
+we are given an array and a target, we need to find out number of combinations that will give us the target ans the answer, repeation of element allowed.
+
+solution-
+
+to solve this preblem we will use recursion .
+
+we gloabbaly declare a 2d vector ans
+
+we make a function solve which takes -array,target,index,empty vector as input
+
+now we will have two choices for a perticular index -1 to include it in our answer -here we do not increment the index as we can again use the current element in our ans	
+								    -2 to not include it in our answer here we increment our index
+
+when we use the element at index at i we push it in the vector and after calling our solve funtion we pop it out(backtracking)
