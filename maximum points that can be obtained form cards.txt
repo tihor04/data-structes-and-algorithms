@@ -1,0 +1,20 @@
+maximum points that can be obtained form cards
+
+problem: 
+
+given an array we need to find out the maximum output that we can take out from a given array when we are only allowed to take one number from only the sides only k times.
+
+solution: 
+
+
+->this question canot be solved by simply using the maximum number form both the sides and simply returing the result
+
+->a naive solution to this problem can be through recursion but the time complexity would be 2^n
+
+->a better appoach will be using the sliding window technique.
+ 	
+	-> we first store the sum of our present array in a variable sum.  
+	-> the basic idea for this algo is that instead of choosing the numbers that we want we can choose the numbers that we dont want.
+	-> we make two pointers one at k and other at end of the array, (as the numbers from 0 to k-1 will be the numbers that we will choose) 
+	->we move this pointer array towards the left end of the array can contineously monitor the sum of the left over elements
+	->at last we return the maximum form the left over elements.
