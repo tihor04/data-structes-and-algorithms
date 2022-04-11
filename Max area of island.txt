@@ -1,0 +1,14 @@
+Max area of island : 
+
+problem : 
+
+we are given a 2d array , with all zeros and 1's , we need find out the max area formed by a patch of one's (concidering only the for directions)
+
+solution: 
+
+-> here we use a visited array to not visit the visited node again.
+
+-> we traverse through the give 2d array , and if we encounter 1 one that is not visited
+then we traverse through the 4 directions and we have a separate funtion to recuresivly traverse
+throught the selected 1's and we return 0 if we get an invalid index or a visited index or a 
+0 else we return 1+ (the recursive call for all other 4 directions).
