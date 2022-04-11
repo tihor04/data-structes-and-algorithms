@@ -1,0 +1,15 @@
+Find the Repeating numbers in O(n) and O(1)
+
+problem: 
+
+we are given an array of size n and it contains intergers form 1 to n, each element of the array either is present one's or twice we need to find the element that are present twice.
+
+solution :
+
+super naive soultion -> O(N^2) and O(1):
+ 						 run two loops and find the numbers 
+naive solution -> sort the array or use maps
+
+efficient solution->
+			 ->we make the visited number index -ve i.e. let arr[0]=4 so we make arr[4-1] -ve,  so whenever we get a number arr[i] that is 4 then arr[4-1] will already be -ve and we 
+			  will be certian that the present number is repeated.

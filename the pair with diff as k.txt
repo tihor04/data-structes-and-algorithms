@@ -1,0 +1,15 @@
+the pair with diff as k :
+
+problem :  given an array, and a number k, we need to find the pairs with difference as k 
+
+solution :
+
+basic idea-> we store the diffrence between consicutive numbers of the sorted array 
+	    -> then sum of the diffrences between i'th and j'th number will be the diffrece between the i'th and j'th number 
+
+sol;
+->sort the array and solve for the case when k=0 separately.
+-> now store the non zero values of difference of consicutive numbers .
+->apply the algo for subarray with given sum .
+
+return  the number of subarrays with given sum

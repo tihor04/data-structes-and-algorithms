@@ -1,0 +1,10 @@
+possible jumps:
+
+problem: we are given an array, each element of the array tells us the maximum jumps that we can make from a perticular index. find if we can reach the end of the array or not.
+
+solution 
+
+DP sol->O(n^2)
+
+greedy solution-O(n)-> we maintain a variable that stores the maximum dist we can cover til that perticualr index, and if this variable becomes less than our iterator i at any point then we
+				simply return false;
