@@ -1,0 +1,15 @@
+subarray with sum divisible by k 
+
+problem : 
+we are given an array and a number k, we need to return the number of subarrays with sum divisible by k.
+
+solution:
+
+basic idea -> let say there is an array of size n and the sum of numbers till the index i is si  and it leaves a remainder x when % by k 
+		and also there is an index with prefixsum as sj and it also leaves the remainder x when it is % by k :: therefore the sum of subarray between the index i and j will be divisible
+		by k.
+
+Mathematically-> let the prefix sum till i be =km+x and that till j be kn+x, so the sum of numbers between i and j will be sj-si==kn+x-km-x=k(n-m)
+			which is divisble by k.
+
+special case-> we can get the remainder as a -ve number also, so to counter that , whenever we get the remainder as a -ve number, we add k to it and then look into the hashmap.

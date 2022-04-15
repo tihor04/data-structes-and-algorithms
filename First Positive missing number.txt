@@ -1,0 +1,18 @@
+First Positive missing number: 
+
+Problem: 
+
+we are given an array of both positive and negative numbers and we need to find out the smallest possible missing number that is not present in the array.
+
+solution:
+
+super naive solution: check for each number for  1 to n and if all of them are found then answer will be n+1.( O(n^2))
+
+naive solution: we put the numbers in a hashtable and find the we keep on finding the numbers from 1 to n . O(n) but also O(n) space.
+
+efficient approach: O(n) and O(1) space
+			-> the basic idea behind this approach is that, we use the indices of the array as a boolean variable, to be able to track the numbers that range from 1 to n
+			-> but first we need to deal with the negative numbers. whenever we encounter a negative number we change it to n+1 so it does not effect the boolean value of an index.
+			-> after that we traverse through the array and check for elemetns on each idex, if they are less than or equal to n and are +ve, then we turn them into negative.
+			-> by doing this, we mark all the values between 1 to n that are presnet in the array and if an index stil has a +ve value, this means the i+1 ith number is  missing
+			->else the smallest number missing is n+1;
