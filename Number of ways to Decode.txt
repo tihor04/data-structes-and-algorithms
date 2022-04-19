@@ -1,0 +1,34 @@
+Number of ways to Decode: 
+
+problem: 
+
+the aphabets are encoded in such a way, A->1 ,B->2......Z->26, now we are given a string of integers, then we need to find the number of ways we can, decode the string,
+
+Ex-
+s="11106"
+ans=2-> 1) (1,1,10,6)
+ 	  2) (11,10,6)
+PS:("06") is not a code for any aphabet) 
+
+solution :
+ 
+recursive solution :findasn(p,s)->p is the itrator and s is the string
+			  Base case:
+ 					if(p is at size of s) return 1 ;
+					if(integer at p is 0) return 0;
+
+			 Logic: int res(stroes the case when we make a one digit number with the number at p)=findans(p+1,s)
+                          //to make a 2 digit number with p we need to make a check->1)p<n-1 
+														 2)s[p] should be either 1 or 2 
+														 3)if s[p] is 2 then s[p+1] should be between 0 to 6 
+				  //if we pass all the cases then we res+=findans(p+2,s);
+
+			return res;
+
+DP solution: 
+
+		we make a dp arr of size n+1 
+		dp[n]=1
+		if s[i]==0 then dp[i]=1;
+		dp[i] will be the sum of dp[i+1] and dp[i+2](only if it passes the condition )
+		return dp[0]
