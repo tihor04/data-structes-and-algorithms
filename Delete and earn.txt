@@ -1,0 +1,25 @@
+Delete and earn: 
+
+problem: 
+
+we are  given an array, numbers and we need to find the max that we can take out of it, given the condition.
+if we choose to delete a number nums[i] for it then we are not allowed to choose the numbers nums[i]+1 or nums[i]-1.
+
+solution :
+
+ Brute force approach
+ to this problem can be use recursion and using two of the possible cases, either we incudle the present
+ number to our answer or we don't.
+
+Dynamic progrmaing approach: 
+we keep a hash map with number of occourances of each element in the nums array, and we have another array to keep the unique elements of the given array
+
+we make a dp array of the same size of the array we made,and we are only concered about the last two indices of the present element.
+
+-> we will have two cases if(the prev element is 1 less than present)->p2=max(currval+p1,p2)		
+
+											else->p2=currval+e2 
+											->we shift the value of e1 accordingly  and at last we return e1;
+
+
+

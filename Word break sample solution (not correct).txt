@@ -1,0 +1,47 @@
+Word break sample solution (not correct) 
+
+class Solution {
+public:
+    unordered_map<string,bool> mp;
+    bool wordBreak(string s, vector<string>& wordDict) {
+        
+        if(wordDict.size()==0){
+            return false;
+        }
+        
+        for(int i =0;i<wordDict.size();i++){
+            if(mp.find(wordDict[i])==mp.end()){
+                mp[wordDict[i]]=false;
+            }
+        }
+        
+        int i=0,j=0;
+        
+        while(j<=s.length()){
+            if(mp.find(s.substr(i,j))!=mp.end()){
+                mp[s.substr(i,j)]=true;
+                cout<<s.substr(i,j)<<" ";
+                i=j;
+                
+            }
+            j++;
+        }
+        
+        
+        if(i!=j+1){
+             return false;
+            cout<<"!";
+        }
+           
+        
+        for(auto x:mp){
+            if(x.second==false){
+                cout<<x.first<<" ";
+                  return false;
+            }
+              
+        }
+        
+        return true;
+    }
+};

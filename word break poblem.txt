@@ -1,0 +1,25 @@
+word break poblem: 
+
+problem: 
+
+
+
+
+solution : 
+
+	->basic idea for recursive approach: 
+							we make a fun(int starting index,string,set of wordDict){
+							Base cases-> if we reach till the end of the string we return true;
+
+							main idea-> we make a string temp->
+									we run the loop  form the i th index to the end of string , 
+									we keep on adding and checking that if the present string is there in the set of wordDict or not
+									if yes, 
+										we check if the recursive call from,i+1 index and check if we get true or false and we return 1 if we get true;
+
+
+
+							if nothing is returned we return false.
+Memoisation aproach: 
+			
+			store the relults in  a dp array and if we agian call for a perticular element, them return that element form the array itself;
